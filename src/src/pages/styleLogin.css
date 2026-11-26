@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top left, rgba(92, 105, 255, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(0, 255, 201, 0.12), transparent 24%),
+        linear-gradient(180deg, #151428 0%, #0c0f1f 100%);
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.MuiPaper-root {
+    width: 100%;
+    max-width: 420px;
+}
+
+@media (max-width: 768px) {
+    .login-page {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-page {
+        padding: 0.75rem;
+    }
+}
+
+.login-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #6f5dff 0%, #0ff2d4 100%);
+    box-shadow: 0 20px 50px rgba(15, 77, 255, 0.24);
+}
+
+.MuiOutlinedInput-root {
+    background: #f7f8ff;
+    border-radius: 18px;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #00c37d;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #00c37d;
+    border-width: 1.5px;
+}
+
+.MuiOutlinedInput-input {
+    color: #1e1e2d;
+}
+
+.MuiInputLabel-root {
+    color: #6f748a;
+}
+
+.MuiButton-contained {
+    text-transform: none;
+}
+
+.login-link {
+    color: #00c37d;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
